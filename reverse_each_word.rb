@@ -5,8 +5,11 @@ def reverse_each_word(word)
   while index < word.length
     if word[index] == ""
       arr << str
+      str = ""
+    else
+      str << word[index]
     end
-    word += word[]
+    index += 1 
   end
   arr.collect { |w| w.reverse} 
 end
