@@ -3,7 +3,7 @@ def reverse_each_word(word)
   arr = []
   str = ""
   while index < word.length
-    if word[index] == ""
+    if word[index] == "\s"
       arr << str
       str = ""
     else
